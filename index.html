@@ -24,9 +24,47 @@
   <main>
 
     <form id="evaluation-form" action="">
-      
-      
+      <section id="section1">
+        <input class="wrap-input" placeholder="Nome" type="text" name="" id="input-name">
+        <input class="wrap-input" placeholder="Sobrenome" type="text" name="" id="input-lastname">
+        <input class="wrap-input" placeholder="Email" type="email" name="" id="input-email">
 
+        <label class="wrap-input" for="house">Casa: <select name="house" id="house">
+          <option id="gitnoria-house" value="Gitnória">Gitnória</option>
+          <option id="reactpuff-house" value="Reactpuff">Reactpuff</option>
+          <option id="corvinode-house" value="Corvinode">Corvinode</option>
+          <option id="pytherina-house" value="Pytherina">Pytherina</option>
+        </select></label>
+      </section>
+
+      <section id="section2">
+        <div id="section2-family">
+          <label id="label-family">Qual sua família?</label>
+          <label for="Frontend"><input type="radio" value="Frontend" name="family" id="Frontend">Frontend</label>
+          <label for="Backend"><input type="radio" value="Backend" name="family" id="Backend">Backend</label>
+          <label for="FullStack"><input type="radio" value="FullStack" name="family" id="FullStack">FullStack</label>
+        </div>
+
+        <div id="section2-content">
+          <label for="" id="label-content">Qual conteúdo você está com mais vontade de aprender?</label>
+          <div>
+            <label for="HoFs"><input value="HoFs" type="checkbox" name="HoFs" id="HoFs">HoFs</label>
+            <label for="Jest"><input value="Jest" type="checkbox" name="Jest" id="Jest">Jest</label>
+            <label for="Promises"><input value="Promises" type="checkbox" name="Promises" id="Promises">Promises</label>
+          </div>
+        
+          <div>
+            <label for="React"><input value="React" type="checkbox" name="React" id="React">React</label>
+            <label for="SQL"><input value="SQL" type="checkbox" name="SQL" id="SQL">SQL</label>
+            <label for="Python"><input value="Python" type="checkbox" name="Python" id="Python">Python</label>
+          </div>
+        </div>
+      </section>
+
+      <section id="section3">
+
+
+      </section>
     </form>
 
     <img id="trybewarts-forms-logo" src="images/trybewarts-colored.svg" alt="Trybewarts Colored Logo">

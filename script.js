@@ -1,4 +1,4 @@
-function login () {
+function login() {
   const email = document.querySelector('#email').value;
   const senha = document.querySelector('#senha').value;
 
