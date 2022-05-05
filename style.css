@@ -123,4 +123,27 @@ main {
 
 #section3 {
   display: flex;
+  flex-direction: column;
+}
+
+#avaliacao-container {
+
+}
+
+#coment-container {
+  display: flex;
+  flex-direction: column;
+}
+
+#coment-container p {
+  position: relative;
+  
+}
+
+#agreement-container {
+
+}
+
+#div-button {
+
 }

@@ -19,6 +19,14 @@ function disabled() {
   } else {
     submitButton.disabled = true;
   }
-
 }
+
 document.querySelector('#agreement').addEventListener('click', disabled);
+
+function count() {
+  const tam = document.querySelector('#comentario').value.length;
+
+  document.querySelector('#count').innerText = 500 - tam;
+}
+
+document.querySelector('#comentario').addEventListener('input', count)
