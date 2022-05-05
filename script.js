@@ -9,3 +9,16 @@ function login() {
   }
 }
 document.querySelector('#entrar').addEventListener('click', login);
+
+function disabled() {
+  const submitButton = document.querySelector('#submit-btn');
+  const checkbox = document.querySelector('#agreement');
+
+  if (checkbox.checked) {
+    submitButton.disabled = false;
+  } else {
+    submitButton.disabled = true;
+  }
+
+}
+document.querySelector('#agreement').addEventListener('click', disabled);
