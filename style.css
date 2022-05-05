@@ -7,9 +7,36 @@
 .header {
   display: flex;
   background-color: rgb(50 , 167 , 145);
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
 }
 
 .trybewarts-login {
   display: flex;
   align-items: center;
+}
+
+.header img {
+  height: 60px;
+}
+
+.header h1 {
+  color: white;
+}
+
+#evaluation-form {
+  display: flex;
+  flex-direction: column;
+  width: 675px;
+}
+
+main {
+  display: flex;
+  width: 675px;
+  margin: 0 auto;
+}
+
+#trybewarts-forms-logo {
+  height: 500px;
 }
