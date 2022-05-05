@@ -24,9 +24,9 @@ function disabled() {
 document.querySelector('#agreement').addEventListener('click', disabled);
 
 function count() {
-  const tam = document.querySelector('#comentario').value.length;
+  const tam = document.querySelector('#textarea').value.length;
 
-  document.querySelector('#count').innerText = 500 - tam;
+  document.querySelector('#counter').innerText = 500 - tam;
 }
 
-document.querySelector('#comentario').addEventListener('input', count)
+document.querySelector('#textarea').addEventListener('input', count);
