@@ -28,5 +28,4 @@ function count() {
 
   document.querySelector('#counter').innerText = 500 - tam;
 }
-
 document.querySelector('#textarea').addEventListener('input', count);
