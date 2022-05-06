@@ -30,8 +30,6 @@ function count() {
 }
 document.querySelector('#textarea').addEventListener('input', count);
 
-const btn = document.querySelector('#submit-btn');
-
 function section1() {
   const nome = document.querySelector('#input-name').value;
   const sobrenome = document.querySelector('#input-lastname').value;
@@ -83,7 +81,7 @@ function section3() {
   section4.innerHTML += `<br>Avaliação: ${nota}<br>Observações: ${coment}`;
 }
 
-btn.addEventListener('click', function oi(element) {
+function funcao(element) {
   element.preventDefault();
   const section4 = document.createElement('section');
   section4.id = 'section4';
@@ -91,4 +89,7 @@ btn.addEventListener('click', function oi(element) {
   section1();
   section2();
   section3();
-});
+}
+
+const btn = document.querySelector('#submit-btn');
+btn.addEventListener('click', funcao);
