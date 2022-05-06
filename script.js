@@ -45,13 +45,13 @@ function section1() {
 function section2() {
   let family;
   const familyArray = document.querySelectorAll('#section2-family input');
+  const tec = document.querySelectorAll('#section2-content input');
+  const tecArray = [];
   for (let i = 0; i < familyArray.length; i += 1) {
     if (familyArray[i].checked === true) {
       family = familyArray[i].value;
     }
   }
-  const tec = document.querySelectorAll('#section2-content input');
-  const tecArray = [];
   for (let i = 0; i < tec.length; i += 1) {
     if (tec[i].checked === true) {
       tecArray.push(` ${tec[i].value}`);
